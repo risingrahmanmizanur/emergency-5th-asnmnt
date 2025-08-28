@@ -8,17 +8,9 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="stylesheet" href="/style.css">
-
-    <!-- <style>
-        .banner-section {
-            justify-items: center;
-            background: linear-gradient(to left , #013223 0%, #005247 50%, #013223 100%);
-            /* align-items: center; */
-            /* align-content: center; */
-        }
-    </style> -->
 </head>
 
 <body>
@@ -51,6 +43,168 @@
         </div>
     </section>
 
+    <!--cart ar history-->
+    <main class="main-layout">
+        <!-- card start left side will take-->
+        <section class="card-container">
+
+            <!-- === Card 1: Emergency Service === -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/images/ambulance.png" alt="Ambulance Icon">
+                    </div>
+                    <button class="heart-btn" onclick="toggleHeart(this)">
+                        <!-- <img src="/images/heart.png" alt="heart"> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="service-title">National Emergency Number</h3>
+                <p class="service-subtitle">National Emergency</p>
+                <p class="service-number">999</p>
+                <span class="badge">Emergency</span>
+                <div class="card-actions">
+                    <button class="copy-btn" onclick="copyNumber('National Emergency','999')">
+                        <i class="fa-regular fa-copy btn-icon"></i> Copy
+                    </button>
+                    <button class="call-btn" onclick="makeCall('National Emergency','999')">
+                        <i class="fa-solid fa-phone btn-icon"></i> Call
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/images/fire-service.png" alt="Fire Icon">
+                    </div>
+                    <button class="heart-btn" onclick="toggleHeart(this)">
+                        <!-- <img src="/images/heart.png" alt="heart"> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="service-title">ফায়ার সার্ভিস</h3>
+                <p class="service-subtitle">Fire Service</p>
+                <p class="service-number">102</p>
+                <span class="badge">Fire</span>
+                <div class="card-actions">
+                    <button class="copy-btn" onclick="copyNumber('Fire Service','102')">
+                        <i class="fa-regular fa-copy btn-icon"></i> Copy
+                    </button>
+                    <button class="call-btn" onclick="makeCall('Fire Service','102')">
+                        <i class="fa-solid fa-phone btn-icon"></i> Call
+                    </button>
+                </div>
+            </div>
+
+            <!-- === Card 2: Police === -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/images/police.png" alt="Police Icon">
+                    </div>
+                    <button class="heart-btn" onclick="toggleHeart(this)">
+                        <!-- <img src="/images/heart.png" alt="heart"> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="service-title">পুলিশ</h3>
+                <p class="service-subtitle">Police Service</p>
+                <p class="service-number">999</p>
+                <span class="badge">Police</span>
+                <div class="card-actions">
+                    <button class="copy-btn" onclick="copyNumber('Police','999')">
+                        <i class="fa-regular fa-copy btn-icon"></i> Copy
+                    </button>
+                    <button class="call-btn" onclick="makeCall('Police','999')">
+                        <i class="fa-solid fa-phone btn-icon"></i> Call
+                    </button>
+                </div>
+            </div>
+            <!-- === Card 2: Police === -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/images/police.png" alt="Police Icon">
+                    </div>
+                    <button class="heart-btn" onclick="toggleHeart(this)">
+                        <!-- <img src="/images/heart.png" alt="heart"> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="service-title">পুলিশ</h3>
+                <p class="service-subtitle">Police Service</p>
+                <p class="service-number">999</p>
+                <span class="badge">Police</span>
+                <div class="card-actions">
+                    <button class="copy-btn" onclick="copyNumber('Police','999')">
+                        <i class="fa-regular fa-copy btn-icon"></i> Copy
+                    </button>
+                    <button class="call-btn" onclick="makeCall('Police','999')">
+                        <i class="fa-solid fa-phone btn-icon"></i> Call
+                    </button>
+                </div>
+            </div>
+            <!-- === Card 2: Police === -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/images/police.png" alt="Police Icon">
+                    </div>
+                    <button class="heart-btn" onclick="toggleHeart(this)">
+                        <!-- <img src="/images/heart.png" alt="heart"> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="service-title">পুলিশ</h3>
+                <p class="service-subtitle">Police Service</p>
+                <p class="service-number">999</p>
+                <span class="badge">Police</span>
+                <div class="card-actions">
+                    <button class="copy-btn" onclick="copyNumber('Police','999')">
+                        <i class="fa-regular fa-copy btn-icon"></i> Copy
+                    </button>
+                    <button class="call-btn" onclick="makeCall('Police','999')">
+                        <i class="fa-solid fa-phone btn-icon"></i> Call
+                    </button>
+                </div>
+            </div>
+            <!-- === Card 2: Police === -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="/images/police.png" alt="Police Icon">
+                    </div>
+                    <button class="heart-btn" onclick="toggleHeart(this)">
+                        <!-- <img src="/images/heart.png" alt="heart"> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="service-title">পুলিশ</h3>
+                <p class="service-subtitle">Police Service</p>
+                <p class="service-number">999</p>
+                <span class="badge">Police</span>
+                <div class="card-actions">
+                    <button class="copy-btn" onclick="copyNumber('Police','999')">
+                        <i class="fa-regular fa-copy btn-icon"></i> Copy
+                    </button>
+                    <button class="call-btn" onclick="makeCall('Police','999')">
+                        <i class="fa-solid fa-phone btn-icon"></i> Call
+                    </button>
+                </div>
+            </div>
+
+            <!--aro 3ta card add ditam-->
+        </section>
+
+        <!-- history right hand -->
+        <section class="history">
+            <div class="history-header">
+                <h2 class="history-icon"><i class="fa-regular fa-clock "></i> Call History</h2>
+                <button onclick="clearHistory()" class="clear-btn">Clear</button>
+            </div>
+            <ul id="historyList"></ul>
+        </section>
+    </main>
 </body>
 
 </html>
