@@ -93,7 +93,7 @@ body {
 
 .main-layout {
     display: flex;
-    gap: 20px;
+    gap: 5px;
     padding: 20px;
     background-color: rgb(244, 244, 244);
 
@@ -101,9 +101,9 @@ body {
 
 .card-container {
     flex: 2;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
-    justify-content: space-around;
     gap: 20px;
 }
 
@@ -111,7 +111,7 @@ body {
     background: white;
     padding: 32px;
     border-radius: 12px;
-    width: 300px;
+    width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -224,7 +224,7 @@ body {
 
 .history-icon {
     font-size: 20px;
-    font-weight:lighter;
+    font-weight: lighter;
     max-width: 136px;
     margin-right: 6px;
 }
@@ -249,4 +249,51 @@ body {
     border-radius: 50px;
     padding: 12px 36px;
     cursor: pointer;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .counters {
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+
+    .history-header {
+        flex-direction: column;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-container,
+    .history {
+        max-width: 50%;
+        gap: 10px;
+    }
+
+
+    .history-icon {
+        font-size: 1.2rem;
+    }
+
+    .banner-section h1 {
+        font-size: 2rem;
+    }
+
+    .banner-section p {
+        font-size: 0.9rem;
+    }
 }
