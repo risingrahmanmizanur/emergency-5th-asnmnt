@@ -5,57 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency 5th Assignment</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- navbar -->
     <nav class="navbar">
-        <!-- Logo -->
         <div class="logo">
-            <img src="/images/logo.png" alt="Logo" class="logo-img" />
+            <img src="images/logo.png" alt="Logo" class="logo-img" />
             <h1>Emergency <br>Service</h1>
         </div>
 
         <div class="counters">
-            <span> <span id="heartCount">0</span><img src="/images/heart.png" class="icon"></span>
-            <span> <span id="coinCount">100</span><img src="/images/coin.png" class="icon"> </span>
+            <span> <span id="heartCount">0</span><img src="images/heart.png" class="icon"></span>
+            <span> <span id="coinCount">100</span><img src="images/coin.png" class="icon"> </span>
             <span id="copyCount">0 Copy</span></span>
         </div>
     </nav>
-    <!-- banner -->
-    <!-- <section class="bg-blue-500 text-white text-center py-12">
-        <img src="/images/logo-dark.png" alt="Banner Logo">
-        <h1 class="text-3xl font-bold">Emergency Service Directory</h1>
-        <p class="mt-2">Find and call important emergency numbers instantly.</p>
-    </section> -->
+    
     <section class="banner-section">
         <div>
-            <img class="banner-img" src="/images/logo-dark.png" alt="Banner Logo">
+            <img class="banner-img" src="images/logo-dark.png" alt="Banner Logo">
             <h1>Emergency Service Directory</h1>
             <p>Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of
                 Bangladesh</p>
         </div>
     </section>
 
-    <!--cart ar history-->
     <main class="main-layout">
-        <!-- card start left side will take-->
         <section class="card-container">
 
-            <!-- === Card 1: Emergency Service === -->
             <div class="card">
                 <div class="card-header">
                     <div class="card-icon">
-                        <img src="/images/ambulance.png" alt="Ambulance Icon">
+                        <img src="images/ambulance.png" alt="Ambulance Icon">
                     </div>
                     <button class="heart-btn" onclick="toggleHeart(this)">
-                        <!-- <img src="/images/heart.png" alt="heart"> -->
                         <i class="fa-regular fa-heart"></i>
                     </button>
                 </div>
@@ -75,14 +63,13 @@
             <div class="card">
                 <div class="card-header">
                     <div class="card-icon">
-                        <img src="/images/fire-service.png" alt="Fire Icon">
+                        <img src="images/fire-service.png" alt="Fire Icon">
                     </div>
                     <button class="heart-btn" onclick="toggleHeart(this)">
-                        <!-- <img src="/images/heart.png" alt="heart"> -->
                         <i class="fa-regular fa-heart"></i>
                     </button>
                 </div>
-                <h3 class="service-title">ফায়ার সার্ভিস</h3>
+                <h3 class="service-title">Fire Service Number</h3>
                 <p class="service-subtitle">Fire Service</p>
                 <p class="service-number">102</p>
                 <span class="badge">Fire</span>
@@ -96,90 +83,16 @@
                 </div>
             </div>
 
-            <!-- === Card 2: Police === -->
             <div class="card">
                 <div class="card-header">
                     <div class="card-icon">
-                        <img src="/images/police.png" alt="Police Icon">
+                        <img src="images/police.png" alt="Police Icon">
                     </div>
                     <button class="heart-btn" onclick="toggleHeart(this)">
-                        <!-- <img src="/images/heart.png" alt="heart"> -->
                         <i class="fa-regular fa-heart"></i>
                     </button>
                 </div>
-                <h3 class="service-title">পুলিশ</h3>
-                <p class="service-subtitle">Police Service</p>
-                <p class="service-number">999</p>
-                <span class="badge">Police</span>
-                <div class="card-actions">
-                    <button class="copy-btn" onclick="copyNumber('Police','999')">
-                        <i class="fa-regular fa-copy btn-icon"></i> Copy
-                    </button>
-                    <button class="call-btn" onclick="makeCall('Police','999')">
-                        <i class="fa-solid fa-phone btn-icon"></i> Call
-                    </button>
-                </div>
-            </div>
-            <!-- === Card 2: Police === -->
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-icon">
-                        <img src="/images/police.png" alt="Police Icon">
-                    </div>
-                    <button class="heart-btn" onclick="toggleHeart(this)">
-                        <!-- <img src="/images/heart.png" alt="heart"> -->
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-                </div>
-                <h3 class="service-title">পুলিশ</h3>
-                <p class="service-subtitle">Police Service</p>
-                <p class="service-number">999</p>
-                <span class="badge">Police</span>
-                <div class="card-actions">
-                    <button class="copy-btn" onclick="copyNumber('Police','999')">
-                        <i class="fa-regular fa-copy btn-icon"></i> Copy
-                    </button>
-                    <button class="call-btn" onclick="makeCall('Police','999')">
-                        <i class="fa-solid fa-phone btn-icon"></i> Call
-                    </button>
-                </div>
-            </div>
-            <!-- === Card 2: Police === -->
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-icon">
-                        <img src="/images/police.png" alt="Police Icon">
-                    </div>
-                    <button class="heart-btn" onclick="toggleHeart(this)">
-                        <!-- <img src="/images/heart.png" alt="heart"> -->
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-                </div>
-                <h3 class="service-title">পুলিশ</h3>
-                <p class="service-subtitle">Police Service</p>
-                <p class="service-number">999</p>
-                <span class="badge">Police</span>
-                <div class="card-actions">
-                    <button class="copy-btn" onclick="copyNumber('Police','999')">
-                        <i class="fa-regular fa-copy btn-icon"></i> Copy
-                    </button>
-                    <button class="call-btn" onclick="makeCall('Police','999')">
-                        <i class="fa-solid fa-phone btn-icon"></i> Call
-                    </button>
-                </div>
-            </div>
-            <!-- === Card 2: Police === -->
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-icon">
-                        <img src="/images/police.png" alt="Police Icon">
-                    </div>
-                    <button class="heart-btn" onclick="toggleHeart(this)">
-                        <!-- <img src="/images/heart.png" alt="heart"> -->
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-                </div>
-                <h3 class="service-title">পুলিশ</h3>
+                <h3 class="service-title">Police Helpline Number</h3>
                 <p class="service-subtitle">Police Service</p>
                 <p class="service-number">999</p>
                 <span class="badge">Police</span>
@@ -193,10 +106,78 @@
                 </div>
             </div>
 
-            <!--aro 3ta card add ditam-->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="images/police.png" alt="Police Icon">
+                    </div>
+                    <button class="heart-btn" onclick="toggleHeart(this)">
+                        <!-- <img src="/images/heart.png" alt="heart"> -->
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="service-title">Police Helpline Number</h3>
+                <p class="service-subtitle">Police Service</p>
+                <p class="service-number">999</p>
+                <span class="badge">Police</span>
+                <div class="card-actions">
+                    <button class="copy-btn" onclick="copyNumber('Police','999')">
+                        <i class="fa-regular fa-copy btn-icon"></i> Copy
+                    </button>
+                    <button class="call-btn" onclick="makeCall('Police','999')">
+                        <i class="fa-solid fa-phone btn-icon"></i> Call
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="images/police.png" alt="Police Icon">
+                    </div>
+                    <button class="heart-btn" onclick="toggleHeart(this)">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="service-title">Police Helpline Number</h3>
+                <p class="service-subtitle">Police Service</p>
+                <p class="service-number">999</p>
+                <span class="badge">Police</span>
+                <div class="card-actions">
+                    <button class="copy-btn" onclick="copyNumber('Police','999')">
+                        <i class="fa-regular fa-copy btn-icon"></i> Copy
+                    </button>
+                    <button class="call-btn" onclick="makeCall('Police','999')">
+                        <i class="fa-solid fa-phone btn-icon"></i> Call
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="images/police.png" alt="Police Icon">
+                    </div>
+                    <button class="heart-btn" onclick="toggleHeart(this)">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="service-title">Police Helpline Number</h3>
+                <p class="service-subtitle">Police Service</p>
+                <p class="service-number">999</p>
+                <span class="badge">Police</span>
+                <div class="card-actions">
+                    <button class="copy-btn" onclick="copyNumber('Police','999')">
+                        <i class="fa-regular fa-copy btn-icon"></i> Copy
+                    </button>
+                    <button class="call-btn" onclick="makeCall('Police','999')">
+                        <i class="fa-solid fa-phone btn-icon"></i> Call
+                    </button>
+                </div>
+            </div>
+
         </section>
 
-        <!-- history right hand -->
         <section class="history">
             <div class="history-header">
                 <h2 class="history-icon"><i class="fa-regular fa-clock "></i> Call History</h2>
@@ -205,6 +186,7 @@
             <ul id="historyList"></ul>
         </section>
     </main>
+    <script src="assignment.js"></script>
 </body>
 
 </html>
